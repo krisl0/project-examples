@@ -24,6 +24,9 @@ allprojects {
 
   repositories {
     mavenCentral()
+	dependencies {
+    implementation group: 'org.apache.ivy.example', name: 'version', version: '1.0', configuration: 'all'
+    }	
   }
 }
 
