@@ -21,12 +21,11 @@ allprojects {
   group = 'org.jfrog.example.gradle'
   version = '1.0'
   status = 'integration'
-
-  repositories {
-    mavenCentral()
-	dependencies {
+   dependencies {
     implementation group: 'org.apache.ivy.example', name: 'version', version: '1.0', configuration: 'all'
-    }	
+    }
+  repositories {
+    mavenCentral()	
   }
 }
 
